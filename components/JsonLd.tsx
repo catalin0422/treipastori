@@ -7,7 +7,7 @@ export default function JsonLd() {
       "Complex turistic în Zahareuca, Telenești, Moldova. Piscină, restaurant, cazare, foișoare, pescuit și natură autentică.",
     url: "https://treipastori.md",
     telephone: ["+37360117999", "+37360941836"],
-    email: "cristianciobanu2007@gmail.com",
+    email: "pensiunea3pastori@gmail.com",
     image: "https://treipastori.md/og-image.webp",
     address: {
       "@type": "PostalAddress",

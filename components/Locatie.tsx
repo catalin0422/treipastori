@@ -14,14 +14,14 @@ export default function Locatie() {
           <div className="contact-group">
             <p className="contact-group-label">Telefon / WhatsApp</p>
             <a href="tel:060117999" className="contact-row">060 117 999 — Sergiu</a>
-            <a href="tel:069054055" className="contact-row">069 054 055</a>
+            <a href="tel:069054055" className="contact-row">069 054 055 — Gabriela</a>
             <a href="tel:060941836" className="contact-row">060 941 836 — Cristian</a>
           </div>
 
           <div className="contact-group">
             <p className="contact-group-label">Email</p>
-            <a href="mailto:cristianciobanu2007@gmail.com" className="contact-row">
-              cristianciobanu2007@gmail.com
+            <a href="mailto:pensiunea3pastori@gmail.com" className="contact-row">
+              pensiunea3pastori@gmail.com
             </a>
           </div>
 
