@@ -1,4 +1,12 @@
+import type { Metadata } from "next";
 import { LanguageProvider } from "@/context/LanguageContext";
+
+export const metadata: Metadata = {
+  title: "Pensiunea Trei Păstori | Cazare & Relaxare în Zahareuca",
+  description:
+    "Rezervă cazare la Pensiunea Trei Păstori din Zahareuca, Telenești. Piscină, restaurant, foișoare, pescuit și natură autentică în inima Moldovei.",
+  alternates: { canonical: "https://treipastori.md" },
+};
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Intro from "@/components/Intro";
