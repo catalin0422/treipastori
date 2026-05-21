@@ -4,14 +4,14 @@ import { useLang } from "@/context/LanguageContext";
 
 const rooms = [
   {
-    img: "/camera-dubla.webp",
+    img: "/camera-tripla.webp",
     alt: "Camera dublă",
     title: "Camera dublă",
     price: "1200 lei",
     note: "2 persoane",
   },
   {
-    img: "/camera-tripla.webp",
+    img: "/camera-dubla.webp",
     alt: "Camera triplă",
     title: "Camera triplă",
     price: "1500 lei",
