@@ -22,6 +22,7 @@ export default function Navbar() {
     { href: "/despre", label: t("nav_1") },
     { href: "/#servicii", label: t("nav_2") },
     { href: "/#cazare", label: t("nav_3") },
+    { href: "/#recenzii", label: "Recenzii" },
     { href: "/#rezervari", label: t("nav_4") },
     { href: "/#locatie", label: "Contact" },
   ];
@@ -32,7 +33,7 @@ export default function Navbar() {
         <a className="nav-logo" href="/">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/logo.webp"
+            src={scrolled ? "/logo.webp" : "/logo-alb-nobg.webp"}
             alt="Trei Păstori"
             style={{ height: 48, width: "auto", display: "block" }}
           />
