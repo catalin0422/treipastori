@@ -83,15 +83,6 @@ function AlteServicii() {
     {
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
-          <path d="M3 7c3-2 6-2 9 0s6 2 9 0"/><path d="M3 7v9a4 4 0 0 0 4 4h1"/><path d="M12 14c1.5 1.5 3 2 5 1.5"/><circle cx="17" cy="18" r="2"/><path d="M12 14V9"/>
-        </svg>
-      ),
-      title: "Pescuit",
-      desc: "Iazul nostru îți oferă un cadru natural liniștit pentru partide de pescuit relaxante.",
-    },
-    {
-      icon: (
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
           <path d="M8 22h8M12 22v-5"/><path d="M5 3h14l-2 9a5 5 0 0 1-10 0L5 3z"/>
         </svg>
       ),
@@ -124,6 +115,17 @@ function AlteServicii() {
       ),
       title: "Excursii în zonă",
       desc: "Vizite la producătorii locali, mânăstiri din împrejurimi și Muzeul Satului. O imersie autentică în cultura moldovenească.",
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+          <path d="M20 12c0-3.5-3-6-8-6S4 8.5 4 12s3 6 8 6 8-2.5 8-6z"/>
+          <path d="M20 12l3.5-4v8L20 12z"/>
+          <circle cx="8.5" cy="10.5" r="1.2" fill="currentColor" stroke="none"/>
+        </svg>
+      ),
+      title: "Pescuit",
+      desc: "Iazul nostru îți oferă un cadru natural liniștit pentru partide de pescuit relaxante.",
     },
     {
       icon: (
