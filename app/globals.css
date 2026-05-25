@@ -404,13 +404,14 @@ section { padding: 96px 5%; }
 .meniu-page { background: var(--sand-50); min-height: 100vh; }
 .meniu-hero {
   padding: 140px 6% 60px; text-align: center;
-  background: var(--esp-900); color: #fff;
+  background: var(--sand-50);
 }
 .meniu-title {
-  font-family: 'Playfair Display', serif; font-size: clamp(2.2rem, 5vw, 3.2rem);
-  font-weight: 600; color: #fff; margin: .4rem 0 .8rem;
+  font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 400; color: var(--esp-900); margin: .4rem 0 .8rem;
 }
-.meniu-subtitle { font-size: .95rem; color: rgba(255,255,255,.65); font-weight: 300; letter-spacing: .04em; }
+.meniu-title em { font-style: italic; color: var(--forest-700); }
+.meniu-subtitle { font-size: .95rem; color: var(--esp-700); font-weight: 300; max-width: 480px; margin: 0 auto; line-height: 1.7; }
 .meniu-wrap { max-width: 860px; margin: 0 auto; padding: 60px 6% 80px; }
 .meniu-section { margin-bottom: 3rem; }
 .meniu-section-header { margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 2px solid var(--ochre); }

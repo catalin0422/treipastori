@@ -135,6 +135,7 @@ const sections = [
       { name: "Figo", desc: "", weight: "0.3 l", price: "15 lei" },
       { name: "Nestea", desc: "", weight: "0.5 l", price: "15 lei" },
       { name: "Teddy Play", desc: "", weight: "0.4 l", price: "20 lei" },
+      { name: "Mojito", desc: "", weight: "0.33 l", price: "50 lei" },
     ],
   },
   {
@@ -166,7 +167,6 @@ const sections = [
       { name: "Vin la butoi (roșu, alb)", desc: "", weight: "0.25 l", price: "25 lei" },
       { name: "Spumant alb / roșu", desc: "", weight: "0.33 l", price: "35 lei" },
       { name: "Cocktail Vișinică", desc: "", weight: "0.35 l", price: "60 lei" },
-      { name: "Mojito", desc: "", weight: "0.33 l", price: "50 lei" },
     ],
   },
 ];
@@ -178,7 +178,7 @@ export default function MeniuPage() {
       <main className="meniu-page">
         <div className="meniu-hero">
           <p className="overline">Pensiunea Trei Păstori</p>
-          <h1 className="meniu-title">Meniul nostru</h1>
+          <h1 className="meniu-title">Meniul <em>nostru</em></h1>
           <p className="meniu-subtitle">Bucate tradiționale moldovenești pregătite cu ingrediente proaspete</p>
         </div>
 
