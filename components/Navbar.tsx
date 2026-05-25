@@ -1,10 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { useLang } from "@/context/LanguageContext";
 import { Lang } from "@/lib/translations";
 
 export default function Navbar() {
+  const pathname = usePathname();
+  const alwaysDark = pathname !== "/";
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const { lang, setLang, t } = useLang();
@@ -24,17 +27,16 @@ export default function Navbar() {
     { href: "/#servicii", label: t("nav_2") },
     { href: "/#cazare", label: t("nav_3") },
     { href: "/#recenzii", label: "Recenzii" },
-    { href: "/#rezervari", label: t("nav_4") },
     { href: "/#locatie", label: "Contact" },
   ];
 
   return (
     <>
-      <nav id="navbar" className={scrolled ? "scrolled" : ""}>
+      <nav id="navbar" className={scrolled || alwaysDark ? "scrolled" : ""}>
         <a className="nav-logo" href="/">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src={scrolled ? "/logo.webp" : "/logo-alb-nobg.webp"}
+            src={scrolled || alwaysDark ? "/logo.webp" : "/logo-alb-nobg.webp"}
             alt="Trei Păstori"
             style={{ height: 48, width: "auto", display: "block" }}
           />

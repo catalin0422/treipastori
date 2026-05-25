@@ -251,10 +251,10 @@ section { padding: 96px 5%; }
 .servicii-header { max-width: 1200px; margin: 0 auto 3rem; text-align: center; }
 .servicii-header .body-text { max-width: 700px; margin: 0 auto; }
 .srv-rows { max-width: 1200px; margin: 0 auto; }
-.srv-row { display: flex; align-items: center; gap: 6%; margin-bottom: 5rem; }
+.srv-row { display: flex; align-items: stretch; gap: 6%; margin-bottom: 5rem; }
 .srv-row.reverse { flex-direction: row-reverse; }
-.srv-row-img { flex: 0 0 50%; border-radius: 4px; overflow: hidden; box-shadow: 0 16px 48px rgba(44,30,22,.12); }
-.srv-row-img img { width: 100%; height: 360px; object-fit: cover; display: block; transition: transform .6s ease; }
+.srv-row-img { flex: 0 0 50%; border-radius: 4px; overflow: hidden; box-shadow: 0 16px 48px rgba(44,30,22,.12); min-height: 360px; max-height: 520px; }
+.srv-row-img img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; transition: transform .6s ease; }
 .srv-row:hover .srv-row-img img { transform: scale(1.03); }
 .srv-row-text { flex: 1; }
 .srv-row-text h3 {
@@ -263,13 +263,19 @@ section { padding: 96px 5%; }
 }
 .srv-row-text p { font-size: .95rem; color: var(--esp-700); line-height: 1.8; white-space: pre-line; }
 .srv-meniu-btn {
-  display: inline-block; margin-top: 1.2rem;
+  display: inline-flex; align-items: center; gap: .4rem;
+  margin-top: 1.4rem; padding: .65rem 1.6rem;
   font-size: .85rem; font-weight: 600; letter-spacing: .06em;
-  color: var(--forest-700); text-decoration: none;
-  border-bottom: 1.5px solid var(--forest-700); padding-bottom: 2px;
-  transition: opacity .2s;
+  color: #fff; background: var(--forest-700);
+  text-decoration: none; border-radius: 50px;
+  transition: background .2s;
 }
-.srv-meniu-btn:hover { opacity: .65; }
+.srv-meniu-btn:hover { background: var(--forest-800); }
+.alte-servicii-list { display: flex; flex-direction: column; gap: 1.2rem; margin-top: 1rem; }
+.alte-servicii-item { display: flex; align-items: flex-start; gap: 1rem; }
+.alte-servicii-icon { flex-shrink: 0; margin-top: .15rem; color: var(--forest-700); }
+.alte-servicii-title { font-size: .95rem; font-weight: 600; color: var(--esp-900); margin-bottom: .2rem; }
+.alte-servicii-desc { font-size: .85rem; color: var(--esp-700); line-height: 1.6; }
 .piscina-prices { margin-top: 1.5rem; border-top: 1px solid var(--sand-200); margin-bottom: 0; }
 .piscina-prices-note { font-size: .75rem; letter-spacing: .12em; text-transform: uppercase; color: var(--ochre); padding: .8rem 0 .4rem; }
 .piscina-price-row { display: flex; justify-content: space-between; align-items: center; padding: .7rem 0; border-bottom: 1px solid var(--sand-200); font-size: .95rem; color: var(--esp-900); }
@@ -404,7 +410,7 @@ section { padding: 96px 5%; }
 .meniu-page { background: var(--sand-50); min-height: 100vh; }
 .meniu-hero {
   padding: 140px 6% 60px; text-align: center;
-  background: var(--sand-50); position: relative;
+  background: var(--sand-100); position: relative;
 }
 .meniu-ornament {
   display: block; width: min(520px, 90%); margin: 0 auto 2rem;
