@@ -1,6 +1,7 @@
 import { LanguageProvider } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import OrnamentMoldovenesc from "@/components/OrnamentMoldovenesc";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -177,6 +178,7 @@ export default function MeniuPage() {
       <Navbar />
       <main className="meniu-page">
         <div className="meniu-hero">
+          <OrnamentMoldovenesc className="meniu-ornament" />
           <p className="overline">Pensiunea Trei Păstori</p>
           <h1 className="meniu-title">Meniul <em>nostru</em></h1>
           <p className="meniu-subtitle">Bucate tradiționale moldovenești pregătite cu ingrediente proaspete</p>

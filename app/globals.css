@@ -404,7 +404,11 @@ section { padding: 96px 5%; }
 .meniu-page { background: var(--sand-50); min-height: 100vh; }
 .meniu-hero {
   padding: 140px 6% 60px; text-align: center;
-  background: var(--sand-50);
+  background: var(--sand-50); position: relative;
+}
+.meniu-ornament {
+  display: block; width: min(520px, 90%); margin: 0 auto 2rem;
+  opacity: .92;
 }
 .meniu-title {
   font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem);
