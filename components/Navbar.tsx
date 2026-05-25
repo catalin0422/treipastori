@@ -20,6 +20,7 @@ export default function Navbar() {
 
   const links = [
     { href: "/despre", label: t("nav_1") },
+    { href: "/meniu", label: "Meniu" },
     { href: "/#servicii", label: t("nav_2") },
     { href: "/#cazare", label: t("nav_3") },
     { href: "/#recenzii", label: "Recenzii" },

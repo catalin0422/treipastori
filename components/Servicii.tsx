@@ -98,6 +98,7 @@ export default function Servicii() {
               <h3>{"title" in s ? s.title : t(s.titleKey)}</h3>
               {"textKey" in s && s.textKey && <p>{t(s.textKey as string)}</p>}
               {i === 0 && <RestaurantSali />}
+              {i === 0 && <a href="/meniu" className="srv-meniu-btn">Vezi meniul →</a>}
               {i === 1 && <PiscinaTable />}
               {i === 2 && <p>Relaxează-te în natură la unul dintre foișoarele noastre rustice, echipate cu masă și grătar. Locul ideal pentru o zi în aer liber cu familia sau prietenii.</p>}
               {i === 2 && <FoisoarePrices />}
