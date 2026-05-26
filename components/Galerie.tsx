@@ -1,7 +1,6 @@
 "use client";
 
 import { useState, useEffect, useCallback } from "react";
-import { useLang } from "@/context/LanguageContext";
 
 const galleryImages = [
   { src: "/galerie-piscina-sezlonguri.webp", alt: "Piscină Șezlonguri", label: "Piscină", cls: "large" },
@@ -20,7 +19,6 @@ const galleryImages = [
 ];
 
 export default function Galerie() {
-  const { t } = useLang();
   const [current, setCurrent] = useState(0);
   const [open, setOpen] = useState(false);
 
@@ -46,7 +44,7 @@ export default function Galerie() {
       <section id="galerie">
         <div className="gallery-header reveal">
           <p className="overline">Galerie</p>
-          <h2 className="section-heading">{t("zambete")}</h2>
+          <h2 className="section-heading">Zâmbete și amintiri de la Trei Păstori</h2>
         </div>
 
         <div className="piscina-full reveal">

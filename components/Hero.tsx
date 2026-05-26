@@ -1,11 +1,9 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { useLang } from "@/context/LanguageContext";
 
 export default function Hero() {
   const heroRef = useRef<HTMLElement>(null);
-  const { t } = useLang();
 
   useEffect(() => {
     heroRef.current?.classList.add("loaded");
@@ -39,7 +37,7 @@ export default function Hero() {
         </div>
         <div className="hero-btns">
           <a className="btn-forest" href="tel:060117999">
-            {t("btn_suna")}
+            Sună acum
           </a>
           <a className="btn-ghost" href="/despre">
             Despre noi

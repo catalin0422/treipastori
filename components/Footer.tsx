@@ -1,7 +1,5 @@
 "use client";
 
-import { useLang } from "@/context/LanguageContext";
-
 const navLinks = [
   { href: "/despre", label: "Despre noi" },
   { href: "#servicii", label: "Servicii" },
@@ -11,8 +9,6 @@ const navLinks = [
 ];
 
 export default function Footer() {
-  const { t } = useLang();
-
   return (
     <footer>
       <div className="footer-grid">
@@ -35,7 +31,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>{t("footer")}</p>
+        <p>© 2026 Pensiunea Trei Păstori, Zahareuca, raionul Telenești. Toate drepturile rezervate.</p>
         <p className="footer-dev">Realizat de Dogaru Cătălin · <a href="tel:+37360171888">+373 60 171 888</a></p>
       </div>
     </footer>

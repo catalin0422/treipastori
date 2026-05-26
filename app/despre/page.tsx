@@ -1,4 +1,3 @@
-import { LanguageProvider } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Despre from "@/components/Despre";
 import Footer from "@/components/Footer";
@@ -12,13 +11,13 @@ export const metadata: Metadata = {
 
 export default function DesprePage() {
   return (
-    <LanguageProvider>
+    <>
       <Navbar />
       <div style={{ paddingTop: "90px" }}>
         <Despre />
       </div>
       <Footer />
       <RevealObserver />
-    </LanguageProvider>
+    </>
   );
 }

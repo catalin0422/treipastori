@@ -1,15 +1,13 @@
 "use client";
 
-import { useLang } from "@/context/LanguageContext";
 
 const services = [
-  { titleKey: "s1_t", textKey: "s1_p", img: "/restaurant.webp", alt: "Restaurant" },
-  { titleKey: "s2_t", textKey: "s2_p", img: "/piscina.webp", alt: "Piscină" },
+  { title: "Restaurant", text: "Avem mai multe săli pentru orice ocazie – cununie, botez, petrecere de familie sau eveniment privat. Echipa noastră se ocupă de fiecare detaliu, de la decor până la meniu.", img: "/restaurant.webp", alt: "Restaurant" },
+  { title: "Piscină", text: "Relaxează-te pe șezlong la marginea piscinei noastre, cu o băutură rece în mână. Spațiu amenajat pentru confort maxim, igienă și liniște.", img: "/piscina.webp", alt: "Piscină" },
   { title: "Foișoare", img: "/foisor.webp", alt: "Foișoare" },
-  { title: "Alte servicii", img: "/galerie-capita-fan.webp", alt: "Servicii extra" },
+  { title: "Saună și ciubăr", img: "/galerie-foc-tabara.webp", alt: "Saună și ciubăr" },
+  { title: "Crama Chobany", img: "/galerie-vin.webp", alt: "Cramă" },
 ];
-
-const facilitati = ["Loc de joacă copii", "Parcare gratuită", "Wi-Fi de mare viteză"];
 
 function RestaurantSali() {
   const sali = [
@@ -83,29 +81,46 @@ function AlteServicii() {
     {
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
-          <path d="M8 22h8M12 22v-5"/><path d="M5 3h14l-2 9a5 5 0 0 1-10 0L5 3z"/>
+          <line x1="5" y1="21" x2="12" y2="14"/>
+          <line x1="19" y1="21" x2="12" y2="14"/>
+          <path d="M12 4c0 4-4 6-4 9a4 4 0 0 0 8 0c0-3-4-5-4-9z"/>
+          <path d="M12 9c0 2-2 3-2 5a2 2 0 0 0 4 0c0-2-2-3-2-5z" fill="currentColor" stroke="none" opacity="0.3"/>
         </svg>
       ),
-      title: "Degustare de vinuri la cramă",
-      desc: "Descoperiți vinurile casei în crama noastră autentică, într-o atmosferă caldă și rustică.",
+      title: "Foc de tabără",
+      desc: "Serile la pensiune capătă cu totul altă atmosferă în jurul focului de tabără. Locul perfect pentru povești, cântece și amintiri de neuitat.",
     },
     {
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
-          {/* barrel body */}
-          <path d="M4 10h16v7a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-7z"/>
-          {/* water line */}
-          <path d="M4 14h16"/>
-          {/* barrel hoops */}
-          <path d="M4 12h16"/>
-          <path d="M4 18h16"/>
-          {/* steam */}
-          <path d="M9 7c0-1 1-1.5 1-2.5S9 3 9 2"/>
-          <path d="M13 7c0-1 1-1.5 1-2.5S13 3 13 2"/>
+          <circle cx="5.5" cy="17.5" r="2.5"/><circle cx="18.5" cy="17.5" r="2.5"/>
+          <path d="M8 17.5h7M15 17.5l-3-7-2 4h-2"/>
+          <path d="M12 10.5V7M12 7l2-2M10 5h4"/>
         </svg>
       ),
-      title: "Saună și ciubăr",
-      desc: "Disponibile în sezonul rece. Relaxare completă în ciubărul cu apă caldă sau sauna tradițională.",
+      title: "Închiriere biciclete",
+      desc: "Explorați împrejurimile Zahareucăi pe bicicletă. Peisaje rurale autentice, aer curat și libertate totală.",
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+          <path d="M3 20l4-8 4 4 4-6 6 10H3z"/>
+          <circle cx="18" cy="5" r="2"/>
+        </svg>
+      ),
+      title: "Trasee turistice",
+      desc: "Rute marcate prin natură, de la plimbări ușoare pe malul iazului până la trasee mai lungi prin peisajul moldovenesc.",
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+          <circle cx="12" cy="12" r="10"/>
+          <path d="M4.9 4.9c4.2 4.2 4.2 11 0 15.2"/>
+          <path d="M19.1 4.9c-4.2 4.2-4.2 11 0 15.2"/>
+        </svg>
+      ),
+      title: "Volei și tenis",
+      desc: "Terenuri amenajate pentru oaspeți. Vă puteți bucura de un meci de tenis sau volei în aer liber.",
     },
     {
       icon: (
@@ -136,9 +151,43 @@ function AlteServicii() {
       title: "Transfer aeroport",
       desc: "Vă preluăm de la aeroportul Chișinău și vă aducem direct la pensiune, comod și fără griji.",
     },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20z"/>
+          <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>
+          <path d="M12 2v4M12 18v4"/>
+        </svg>
+      ),
+      title: "Wi-Fi de mare viteză",
+      desc: "Conexiune Wi-Fi rapidă disponibilă în toată pensiunea.",
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+          <rect x="2" y="14" width="4" height="6" rx="1"/>
+          <rect x="10" y="10" width="4" height="10" rx="1"/>
+          <rect x="18" y="6" width="4" height="14" rx="1"/>
+          <circle cx="6" cy="6" r="2"/>
+          <path d="M6 8v2"/>
+        </svg>
+      ),
+      title: "Loc de joacă copii",
+      desc: "Spațiu de joacă amenajat pentru cei mici, în siguranță.",
+    },
+    {
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" width="22" height="22">
+          <rect x="3" y="3" width="18" height="18" rx="2"/>
+          <path d="M9 17V7h4a3 3 0 0 1 0 6H9"/>
+        </svg>
+      ),
+      title: "Parcare gratuită",
+      desc: "Parcare gratuită și sigură disponibilă pentru toți oaspeții.",
+    },
   ];
   return (
-    <div className="alte-servicii-list">
+    <div className="alte-servicii-grid">
       {items.map((item) => (
         <div key={item.title} className="alte-servicii-item">
           <span className="alte-servicii-icon">{item.icon}</span>
@@ -153,7 +202,6 @@ function AlteServicii() {
 }
 
 export default function Servicii() {
-  const { t } = useLang();
 
   return (
     <section id="servicii">
@@ -164,34 +212,38 @@ export default function Servicii() {
       <div className="srv-rows">
         {services.map((s, i) => (
           <div key={i} className={`srv-row reveal${i % 2 !== 0 ? " reverse" : ""}`}>
-            <div className="srv-row-img">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={s.img} alt={s.alt} loading="lazy" />
+            <div className={i === 4 ? "srv-row-img-grid" : "srv-row-img"}>
+              {i === 4 ? (
+                <>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/crama-butoaie.webp" alt="Butoaie cramă" loading="lazy" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/crama-masa.webp" alt="Masa cramă" loading="lazy" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/crama-intrare.webp" alt="Intrare cramă" loading="lazy" />
+                </>
+              ) : (
+                // eslint-disable-next-line @next/next/no-img-element
+                <img src={s.img} alt={s.alt} loading="lazy" />
+              )}
             </div>
             <div className="srv-row-text">
-              {("title" in s ? s.title : t(s.titleKey)) && i !== 3 && <h3>{"title" in s ? s.title : t(s.titleKey)}</h3>}
-              {"textKey" in s && s.textKey && <p>{t(s.textKey as string)}</p>}
+              <h3>{s.title}</h3>
+              {"text" in s && s.text && <p>{s.text}</p>}
               {i === 0 && <RestaurantSali />}
               {i === 0 && <a href="/meniu" className="srv-meniu-btn">Vezi meniul →</a>}
               {i === 1 && <PiscinaTable />}
               {i === 2 && <p>Relaxează-te în natură la unul dintre foișoarele noastre rustice, echipate cu masă și grătar. Locul ideal pentru o zi în aer liber cu familia sau prietenii.</p>}
               {i === 2 && <FoisoarePrices />}
-              {i === 3 && <AlteServicii />}
+              {i === 3 && <p>Relaxare completă în sauna tradițională sau în ciubărul cu apă caldă sub cerul liber. Disponibil în sezonul rece, perfect pentru un weekend reconfortant alături de prieteni sau familie.</p>}
+              {i === 4 && <p>Crama Chobany este un spațiu autentic și primitor, ideal pentru degustări de vinuri moldovenești, întâlniri în grup sau seri speciale la lumina lumânărilor.</p>}
             </div>
           </div>
         ))}
       </div>
 
-      <div className="facilitati-row reveal">
-        <p className="facilitati-label">Alte facilități</p>
-        <div className="facilitati-grid">
-          {facilitati.map((f) => (
-            <div key={f} className="facilitati-item">
-              <span className="facilitati-dash">—</span>
-              {f}
-            </div>
-          ))}
-        </div>
+      <div className="alte-servicii-section reveal">
+        <AlteServicii />
       </div>
     </section>
   );

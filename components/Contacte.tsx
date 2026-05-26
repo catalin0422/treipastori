@@ -1,7 +1,5 @@
 "use client";
 
-import { useLang } from "@/context/LanguageContext";
-
 const contacts = [
   { href: "tel:060117999", label: "📞 060117999" },
   { href: "tel:069054055", label: "📞 069054055" },
@@ -12,8 +10,6 @@ const contacts = [
 ];
 
 export default function Contacte() {
-  const { t } = useLang();
-
   return (
     <section id="contacte">
       <div className="contacte-wrap">

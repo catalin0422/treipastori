@@ -2,15 +2,12 @@
 
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
-import { useLang } from "@/context/LanguageContext";
-import { Lang } from "@/lib/translations";
 
 export default function Navbar() {
   const pathname = usePathname();
   const alwaysDark = pathname !== "/";
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const { lang, setLang, t } = useLang();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 60);
@@ -22,11 +19,12 @@ export default function Navbar() {
   const closeMenu = () => setMenuOpen(false);
 
   const links = [
-    { href: "/despre", label: t("nav_1") },
+    { href: "/despre", label: "Despre noi" },
     { href: "/meniu", label: "Meniu" },
-    { href: "/#servicii", label: t("nav_2") },
-    { href: "/#cazare", label: t("nav_3") },
+    { href: "/#servicii", label: "Servicii" },
+    { href: "/#cazare", label: "Cazare" },
     { href: "/#recenzii", label: "Recenzii" },
+    { href: "/regulament", label: "Regulament" },
     { href: "/#locatie", label: "Contact" },
   ];
 

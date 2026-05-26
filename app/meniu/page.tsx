@@ -1,4 +1,3 @@
-import { LanguageProvider } from "@/context/LanguageContext";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import OrnamentMoldovenesc from "@/components/OrnamentMoldovenesc";
@@ -174,7 +173,7 @@ const sections = [
 
 export default function MeniuPage() {
   return (
-    <LanguageProvider>
+    <>
       <Navbar />
       <main className="meniu-page">
         <div className="meniu-hero">
@@ -210,6 +209,6 @@ export default function MeniuPage() {
         </div>
       </main>
       <Footer />
-    </LanguageProvider>
+    </>
   );
 }

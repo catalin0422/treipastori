@@ -1,6 +1,5 @@
 "use client";
 
-import { useLang } from "@/context/LanguageContext";
 
 const rooms = [
   {
@@ -27,7 +26,6 @@ const rooms = [
 ];
 
 export default function Cazare() {
-  const { t } = useLang();
 
   return (
     <section id="cazare">
@@ -38,14 +36,21 @@ export default function Cazare() {
           <h2 className="section-heading">
             Odihnă și Confort la <em>Trei Păstori</em>
           </h2>
-          <p className="body-text" style={{ maxWidth: 780 }}>{t("caz_p")}</p>
+          <p className="body-text" style={{ maxWidth: 780 }}>După o zi plină de soare la piscină, o partidă de pescuit sau o plimbare în natură, te așteptăm să te retragi în liniște. Complexul nostru îți pune la dispoziție 12 camere intime și primitoare, gândite special pentru a-ți oferi relaxarea de care ai nevoie departe de agitația orașului.</p>
         </div>
 
         <div className="caz-perks-grid reveal">
-          {["c_p1", "c_p2", "c_p3", "c_p4", "c_p5", "c_p6"].map((key, i) => (
-            <div key={key} className="perk">
+          {[
+            "Piscină: Acces gratuit",
+            "Mic dejun: Inclus în prețul camerei",
+            "Confort: Aer condiționat și baie proprie",
+            "Program: Check-in ora 13:00 / Check-out ora 11:00",
+            "Utilități: Mini-frigider pe hol + Wi-Fi de mare viteză",
+            "Pet-friendly: Acceptăm animale mici (din motive de igienă a spațiilor verzi, excepție fac câinii)",
+          ].map((text, i) => (
+            <div key={i} className="perk">
               <PerkIcon index={i} />
-              <span>{t(key)}</span>
+              <span>{text}</span>
             </div>
           ))}
         </div>

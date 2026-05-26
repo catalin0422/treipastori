@@ -1,10 +1,6 @@
 "use client";
 
-import { useLang } from "@/context/LanguageContext";
-
 export default function Locatie() {
-  const { t } = useLang();
-
   return (
     <section id="locatie">
       <div className="locatie-wrap reveal">
