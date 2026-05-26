@@ -35,7 +35,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ro">
       <head>
-        <link rel="icon" href="/favicon.webp" type="image/webp" />
+        <link rel="icon" href="/favicon.png" type="image/png" />
+        <link rel="preload" as="image" href="/cladire-noaptea.webp" />
         <JsonLd />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
