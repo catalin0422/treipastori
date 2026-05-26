@@ -212,8 +212,17 @@ export default function Servicii() {
       <div className="srv-rows">
         {services.map((s, i) => (
           <div key={i} className={`srv-row reveal${i % 2 !== 0 ? " reverse" : ""}`}>
-            <div className={i === 4 ? "srv-row-img-grid" : "srv-row-img"}>
-              {i === 4 ? (
+            <div className={i === 3 || i === 4 ? "srv-row-img-grid" : "srv-row-img"}>
+              {i === 3 ? (
+                <>
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/ciubar.webp" alt="Ciubăr" loading="lazy" />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/sauna.webp" alt="Saună" loading="lazy" style={{ objectPosition: "right center" }} />
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img src="/sauna-bazin.webp" alt="Bazin saună" loading="lazy" style={{ objectPosition: "center bottom" }} />
+                </>
+              ) : i === 4 ? (
                 <>
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img src="/crama-butoaie.webp" alt="Butoaie cramă" loading="lazy" />
