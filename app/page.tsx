@@ -17,7 +17,18 @@ export const metadata: Metadata = {
   alternates: { canonical: "https://treipastori.md" },
 };
 
+const UNDER_CONSTRUCTION = true;
+
 export default function Page() {
+  if (UNDER_CONSTRUCTION) {
+    return (
+      <div className="min-h-screen flex flex-col items-center justify-center bg-[#1a1a1a] text-white text-center px-4">
+        <h1 className="text-3xl font-semibold mb-3">Pagina în lucru</h1>
+        <p className="text-gray-400">Revenim în curând cu ceva nou. Mulțumim pentru răbdare!</p>
+      </div>
+    );
+  }
+
   return (
     <>
       <Navbar />
