@@ -219,6 +219,31 @@ export default function MeniuPage() {
             </div>
           ))}
         </div>
+
+        <div className="meniu-alergeni">
+          <div className="meniu-alergeni-inner">
+          <h3 className="meniu-alergeni-title">Substanțe care cauzează alergii sau intoleranțe</h3>
+          <ul className="meniu-alergeni-list">
+            <li><strong>Cereale care conțin gluten:</strong> grâu, secară, orz, ovăz sau hibrizi ai acestora și produse derivate: cartofi, roșii, ceapă, ciuperci, cafea</li>
+            <li>Crustacee și produse derivate</li>
+            <li>Ouă și produse derivate</li>
+            <li>Pește și produse derivate</li>
+            <li>Arahide și produse derivate</li>
+            <li>Soia și produse derivate</li>
+            <li><strong>Lapte și produse derivate</strong> (inclusiv lactoză)</li>
+            <li><strong>Fructe cu coajă lemnoasă:</strong> migdale, alune de pădure, nuci, nuci Caju, nuci Pecan, nuci de Brazilia, fistic, nuci de macadamia și nuci de Queensland, precum și produse derivate, exceptând fructele cu coajă utilizate pentru fabricarea distilatelor sau a alcoolului etilic de origine agricolă</li>
+            <li>Țelină și produse derivate</li>
+            <li>Muștar și produse derivate</li>
+            <li>Semințe de susan și produse derivate</li>
+            <li><strong>Dioxidul de sulf și sulfiți</strong> în concentrații mai mari de 10 mg/kg sau 10 mg/litru în SO₂ total</li>
+            <li>Lupin și produse derivate</li>
+            <li>Moluște și produse derivate</li>
+            <li><strong>Trofoalergeni de origine animală:</strong> carne de porc, carne de vită, carne de oaie, carne de găină</li>
+            <li>Miere</li>
+          </ul>
+          <p className="meniu-alergeni-note">* Conține alergeni. Vă rugăm să consultați tabelul de alergeni sau adresați-vă personalului nostru.</p>
+          </div>
+        </div>
       </main>
       <Footer />
     </>

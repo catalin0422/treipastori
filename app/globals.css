@@ -439,6 +439,14 @@ section { padding: 96px 5%; }
 .meniu-item-weight { font-size: .75rem; color: var(--esp-700); white-space: nowrap; }
 .meniu-item-price { font-size: .95rem; font-weight: 600; color: var(--forest-700); white-space: nowrap; }
 
+.meniu-alergeni { max-width: 100%; margin: 0 0 0; padding: 40px 6%; background: #fdf0f0; border-top: 2px solid #e8b4b4; }
+.meniu-alergeni-inner { max-width: 860px; margin: 0 auto; }
+.meniu-alergeni-title { font-size: .8rem; font-weight: 700; color: var(--esp-700); margin-bottom: 1rem; text-transform: uppercase; letter-spacing: .03em; }
+.meniu-alergeni-list { list-style: none; padding: 0; margin: 0 0 1rem; display: flex; flex-direction: column; gap: .45rem; }
+.meniu-alergeni-list li { font-size: .8rem; color: var(--esp-700); line-height: 1.5; padding-left: 1rem; position: relative; }
+.meniu-alergeni-list li::before { content: "·"; position: absolute; left: 0; color: var(--ochre); }
+.meniu-alergeni-note { font-size: .75rem; color: var(--esp-600); font-style: italic; }
+
 .regulament-page { background: var(--sand-50); min-height: 100vh; }
 .regulament-hero { padding: 140px 6% 60px; text-align: center; background: var(--sand-100); }
 .regulament-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem, 4vw, 3rem); font-weight: 400; color: var(--esp-900); margin: .4rem 0 .8rem; }
