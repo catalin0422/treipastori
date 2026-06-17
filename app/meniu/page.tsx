@@ -14,7 +14,6 @@ const sections = [
     items: [
       { name: "Mic dejun", desc: "Omletă sau ouă ochiuri, brânză, unt și dulceață de casă, roșii, castraveți", weight: "350 g", price: "95 lei" },
       { name: "Omletă simplă", desc: "Ouă, brânză de oi, smântână", weight: "350 g", price: "95 lei" },
-      { name: "Unt, gem", desc: "", weight: "40 g", price: "40 lei" },
     ],
   },
   {
@@ -46,6 +45,19 @@ const sections = [
       { name: "Mici", desc: "Frigărui, salată, cartofi, sos", weight: "200/100/100/40 g", price: "150 lei" },
       { name: "Cârnăciori apetisanți", desc: "Frigărui, salată, cartofi, sos", weight: "150/50/50 g", price: "150 lei" },
       { name: "Cârnăciori de pasăre", desc: "Frigărui, salată, cartofi, sos", weight: "150/50/50 g", price: "150 lei" },
+    ],
+  },
+  {
+    title: "Bucate fierbinți",
+    items: [
+      { name: "Aripioare crocante", desc: "Fără cartofi", weight: "200 g", price: "120 lei" },
+      { name: "Nughete de pui", desc: "Cu cartofi fri și sos la alegere", weight: "150/100/50 g", price: "120 lei" },
+    ],
+  },
+  {
+    title: "Garnituri",
+    items: [
+      { name: "Cartofi fri", desc: "Cu sos la alegere", weight: "160 g", price: "50 lei" },
     ],
   },
   {
