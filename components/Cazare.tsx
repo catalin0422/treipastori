@@ -23,6 +23,13 @@ const rooms = [
     price: "1800 lei",
     note: "2 adulți + 2 copii",
   },
+  {
+    img: "/camera-family.webp",
+    alt: "Camera family",
+    title: "Camera family",
+    price: "1800 lei",
+    note: "2 adulți + 3 copii",
+  },
 ];
 
 export default function Cazare() {
